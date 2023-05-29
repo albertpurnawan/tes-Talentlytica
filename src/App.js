@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
+
 
 function App() {
   // const [data1,setData1] = useState()
@@ -12,13 +11,13 @@ function App() {
     const last = [];
     e.preventDefault();
     for (let i = 0; i < e.target.length; i++){
-      if (e.target[i].name == 'aspek1') {
+      if (e.target[i].name === 'aspek1') {
         aspek1.push(Number(e.target[i].value));
-      } else if (e.target[i].name == 'aspek2') {
+      } else if (e.target[i].name === 'aspek2') {
         aspek2.push(Number(e.target[i].value));
-      }else if (e.target[i].name == 'aspek3') {
+      }else if (e.target[i].name === 'aspek3') {
         aspek3.push(Number(e.target[i].value));
-      }else if (e.target[i].name == 'aspek4') {
+      }else if (e.target[i].name === 'aspek4') {
         aspek4.push(Number(e.target[i].value));
       }
     }
